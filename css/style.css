@@ -1,0 +1,146 @@
+*{ margin: 0; padding: 0;}
+html{ font-size:40px;}
+.clearfix{ clear: both;*zoom:1}
+.clearfix:after{content: ""; display: block; visibility: hidden; clear: both;}
+.left{ float: left;}
+a{ text-decoration: none;}
+.right{ float: right;}
+img{ display: block;}
+.p1_ill img,.btn_download img,.p1_ad_copy img,.logo img,.p2_ill img,.p2_ad_copy1 img,.p2_ad_copy2 img,.p3_ad_copy1 img,.p3_ad_copy2 img,.p3_ill img,.p4_ad_copy1 img,.p4_ad_copy2 img,.p4_ill img,.p5_ad_copy1 img,.p5_ad_copy2 img,.p5_ad_copy3 img,.p5_ad_copy4 img,.p5_ad_copy5 img,.p5_ad_copy6 img,.footer-logo img,.p4ucode img{ width: 100%;}
+
+/*toopil*/
+#fp-nav ul li{ width: 16px;height: 15px;}
+#fp-nav ul li a span{ width: 10px; height: 10px; background: url(../img/toopli.png) no-repeat center center; border: none; }
+#fp-nav ul li a.active span{ background:  url(../img/toopliactive.png) no-repeat center center;}
+/*top*/
+.topBar{position: fixed; width: 100%;z-index:70; top: 0; left: 0; background:rgba(245,245,245,0.9); transition: all 0.3s ease;-webkit-transition: all 0.3s ease;}
+.topBarIn{ max-width: 1268px; height:2.4rem; margin: 0 auto; position: relative; width: 100%;}
+.topBarIn .logo_before{ position: absolute; top: 2.4rem; height: 0; width: 0; border-top:0.5rem solid rgba(245,245,245,0.9);border-left:2.425rem solid rgba(245,245,245,0);border-right:2.425rem solid rgba(245,245,245,0); left: 0; z-index:88;transition: all 0.3s ease;-webkit-transition: all 0.3s ease;}
+.logo{ position: absolute; z-index: 99; left: 0; top: 0; width:4.85rem;}
+.top_slogan{ width: 3.95rem; height:2.4rem; background: url(../img/top_slogan.png) no-repeat right center; padding-left: 4.85rem; background-size: auto 100%;}
+.top_btn_download{ width: 4.225rem; padding-top: 0.575rem;}
+.top_btn_download_in{ height:1.25rem; background: url(../img/top_btn_download.png) no-repeat center center; display: none;background-size:100% 100%;}
+.top_btn_download_in a{ display: block; height: 100%;}
+.section{ text-align: center;color: #333; position: relative;}
+/*body*/
+.main{max-width: 1268px; position: relative; margin: 0 auto; width: 100%;}
+.page1-box{width: 47.003%; float: left;margin: 0 auto;}
+.p1_ad_copy{width: 100%;}
+.btn_download{ width: 61.724%; padding-top: 48px; margin: 0 auto;}
+.btn_download a{ display: block; width: 100%;height: 100%;}
+.illbox{ width: 51.89%; position: relative;}
+.p1_ill{ position: absolute; right: 0; width:94%;}
+.p1_ill1{ top:2rem;}
+.p1_ill2{ top:-0.85rem;}
+.p1_ill3{ top:-5rem;}
+.page-l{ float: left;}
+.page-r{ float: right;}
+.page2-l,.page3-l,.page4-l{ width: 50%;margin: 0 auto;}
+.page2-r,.page3-r,.page4-r{ width: 50%;margin: 0 auto;}
+.page5{ width: 50%; margin: 0 auto; padding-top: 2.2rem;}
+.p5_ad_copy1,.p5_ad_copy4,.p5_ad_copy5,.p5_ad_copy6,.p5_ad_copy_box{ width: 100%; margin: 0 auto;}
+.p5_ad_copy2,.p5_ad_copy3{ width: 47%; margin: 0 auto; display: inline-block;}
+.p2_ill{ width: 100%;}
+.footer-logo{ width: 3.85rem; height: 2.7rem; margin: 0 auto;margin-bottom:4rem;}
+.footer{ padding-top: 2.45rem; padding-bottom: 1.25rem; width: 100%; background: #f5f5f5; position: relative;}
+.p4ucode{ position: absolute; width: 5.1rem; height: 5.1rem; left: 50%; margin-left: -2.55rem; top: -3.05rem;}
+.footer-in{max-width: 1268px; width: 100%; margin: 0 auto;}
+.footer-copy{ font-size:14px; color: #a8a8a8;}
+.attention{padding-top: 0.5rem;font-size:14px; color:#A8A8A8}
+.attention img{ display: inline-block; vertical-align: middle;}
+
+#goto_top{ position: fixed; bottom:10%; right:20px; list-style: none; z-index: 999; display: none;}
+.goto_top_btn{ width:2.2rem;height:2.2rem;background: url(../img/back_to_top.png) no-repeat center center; display: block; background-size:100% 100% ;}
+
+/*animate*/
+ /*page1*/
+.active.section .p1_ad_copy{ animation:fadeInLeftBig 1.5s ease-in-out -.5s both;-webkit-animation:fadeInLeftBig 1.5s ease-in-out -.5s both;}
+.active.section .btn_download{ animation:fadeInLeftBig 1.5s ease-in-out 0s both;-webkit-animation:fadeInLeftBig 1.5s ease-in-out both -0s;}
+.active.section .p1_ill1{ animation:fadeInRightBig 1.5s ease-in-out .5s both ;-webkit-animation:fadeInRightBig 1.5s ease-in-out .5s both;}
+.active.section .p1_ill2{ animation:fadeInUp .8s ease-in-out 2.2s both ;-webkit-animation:fadeInUp .8s ease-in-out 2.2s both ;}
+.active.section .p1_ill3{ animation:fadeInUp .8s ease-in-out 2.2s both ;-webkit-animation:fadeInUp .8s ease-in-out 2.2s both;}
+
+ /*page2*/
+.active.section .p2_ill{ animation:fadeInLeftBig 1.5s ease-in-out -.5s both;-webkit-animation:fadeInLeftBig 1.5s ease-in-out -.5s both;}
+.active.section .p2_ad_copy1{ animation:fadeInRightBig 1.5s ease-in-out -.5s both ;-webkit-animation:fadeInRightBig 1.5s ease-in-out -.5s both ;}
+.active.section .p2_ad_copy2{ animation:bounceInRight 1s ease-in-out 1s both ;-webkit-animation:bounceInRight 1s ease-in-out 1s both;}
+
+ /*page3*/
+.active.section .p3_ill{ animation:fadeInRightBig 1.5s ease-in-out -.5s both ;-webkit-animation:fadeInRightBig 1.5s ease-in-out -.5s both;}
+.active.section .p3_ad_copy1{ animation:fadeInLeftBig 1.5s ease-in-out -.5s both ;-webkit-animation:fadeInLeftBig 1.5s ease-in-out -.5s both ;}
+.active.section .p3_ad_copy2{ animation:bounceInLeft 1s ease-in-out 1s both ;-webkit-animation:bounceInLeft 1s ease-in-out 1s both;}
+
+/*page4*/
+.active.section .p4_ill{ animation:fadeInRightBig 1.5s ease-in-out -.5s both ;-webkit-animation:fadeInRightBig 1.5s ease-in-out -.5s both;}
+.active.section .p4_ad_copy1{ animation:fadeInLeftBig 1.5s ease-in-out -.5s both ;-webkit-animation:fadeInLeftBig 1.5s ease-in-out -.5s both ;}
+.active.section .p4_ad_copy2{ animation:bounceInLeft 1s ease-in-out 1s both ;-webkit-animation:bounceInLeft 1s ease-in-out 1s both;}
+
+/*page5*/
+.active.section .p5_ad_copy1{ animation:bounceIn .8s ease-in-out .7s both ;-webkit-animation:bounceIn .8s ease-out .75s both;}
+.active.section .p5_ad_copy2{ animation:fadeInLeftBig .8s ease-in-out 1.2s both ;-webkit-animation:fadeInLeftBig .8s ease-in-out 1.2s both;}
+.active.section .p5_ad_copy3{ animation:fadeInRightBig .8s ease-in-out 1.6s both ;-webkit-animation:fadeInRightBig .8s ease-in-out 1.6s both;}
+.active.section .p5_ad_copy4{ animation:bounceInLeft 0.8s ease-in-out 2.8s both ;-webkit-animation:bounceInLeft 0.8s ease-in-out 2.8s both;}
+.active.section .p5_ad_copy5{ animation:bounceIn .8s ease-in-out 4s both ;-webkit-animation:bounceIn .8s ease-in-out 4s both;}
+.active.section .p5_ad_copy6{ animation:fadeInRightBig 1s ease-in-out 4.5s both,flash .6s linear 6s both ;-webkit-animation:fadeInRightBig 1s ease-in-out 4.5s both,flash .6s linear 6s both;}
+.active.section .footer-logo{animation:fadeIn 2s ease-out 7.5s both;-webkit-animation:fadeIn 2s ease-out 7.5s both;}
+/*2560*/
+@media only screen and (max-width:2560px) {
+	.footer{ position: absolute;bottom: 0;}
+}
+
+/*1920*/
+@media only screen and (max-width:1920px) {
+	.footer{ position: relative;bottom: 0;}
+}
+/*1440*/
+@media only screen and (max-width:1440px) {
+	.p1_ill{ width:84%;}
+}
+/*小于1366屏幕*/
+@media only screen and (max-width:1366px) {
+	 html{ font-size: 28px;}	
+	.logo{ left: 10%;}
+	.topBarIn .logo_before{ left: 10%;}
+	.topBarIn{box-sizing: border-box; padding: 0 10%; }
+	.main{box-sizing: border-box; padding: 0 10%;}
+	.footer-in{box-sizing: border-box; padding: 0 10%;}
+	.illbox{ width:42%; position: relative;}
+	.p1_ill{ left: 20%; width: 94%;}
+}
+/*pad横屏*/
+@media only screen and (max-width:1024px){
+	.p1_ill1{ top:2rem;}
+    .p1_ill2{ top:-1.5rem;}
+    .p1_ill3{ top:-5rem;}
+    .p4ucode{ display: none;}
+    .footer-logo{ margin-bottom: 0;}
+    .footer{ position: absolute; bottom: 0; left: 0; padding: 0.5rem;}
+}
+/*pad竖屏*/
+@media only screen and (max-width:768px){
+	.illbox{ display: none;}
+	.page1-box{ width: 80%; float: none;}
+	.page-l,.page-r{ float: none;}
+	.page2-l,.page3-l,.page4-l{ width:70%;}
+    .page2-r,.page3-r,.page4-r{ width: 70%;}
+    .page5{ width: 70%;}
+	
+}
+/*手机横屏*/
+@media only screen and (max-width:736px){
+	html{ font-size: 18px;}
+	.page-l,.page-r{ float: none;}
+	.btn_download{ padding-top: 28px;}
+	.page2-l,.page3-l,.page4-l{ width:50%; float: left;}
+    .page2-r,.page3-r,.page4-r{ width: 50%;float: left;}
+    .page5{ width: 40%; padding-top:2rem;}
+    .footer{ display: none;}
+}
+/*手机竖屏*/
+@media only screen and (max-width:414px){
+	.page-l,.page-r{ float: none;}
+	.page2-l,.page3-l,.page4-l{ width:70%; }
+    .page2-r,.page3-r,.page4-r{ width: 70%;}
+    .page5{ width: 70%;}
+}
+

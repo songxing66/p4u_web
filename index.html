@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width" />
+		<title>官网</title>
+		<link href="css/jquery.fullPage.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/animate.min.css" rel="stylesheet"/>
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/jquery.slimscroll.min.js"></script>
+	</head>
+
+	<body>
+		<div class="topBar">
+			<div class="topBarIn clearfix">
+				<div class="logo_before"></div>
+				<div class="logo">
+					<a href="#"><img src="img/top_logo_p4u.png"></a>
+				</div>
+				<div class="top_slogan left">
+					
+				</div>
+				<div class="right top_btn_download">
+					<div class="top_btn_download_in">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul id="goto_top">
+			<li data-menuanchor="page1"><a href="#page1" class="goto_top_btn"></a></li>
+		</ul>
+		<div id="swiperBox">
+			<div class="section section1">
+				<div class="main clearfix">
+					<div class="page1-box">
+						<div class="p1_ad_copy">
+							<img src="img/p1_ad_copy.png">
+						</div>
+						<div class="btn_download">
+							<a href="#"><img src="img/btn_download.png"></a>
+						</div>
+					</div>
+					<div class="illbox left">
+						<div class="p1_ill p1_ill1">
+							<img src="img/p1_ill1.png">
+						</div>
+						<div class="p1_ill p1_ill2">
+							<img src="img/p1_ill2.png">
+						</div>
+						<div class="p1_ill p1_ill3">
+							<img src="img/p1_ill3.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section section2">
+				<div class="main clearfix">
+					<div class="page-l page2-l">
+						<div class="p2_ill"><img src="img/p2_ill.png"></div>
+					</div>
+					<div class="page-r page2-r">
+						<div class="p2_ad_copy1"><img src="img/p2_ad_copy1.png"></div>
+						<div class="p2_ad_copy2"><img src="img/p2_ad_copy2.png"></div>
+					</div>
+				</div>
+			</div>
+			<div class="section section2">
+				<div class="main clearfix">
+					<div class="page-l page3-l">
+						<div class="p3_ad_copy1"><img src="img/p3_ad_copy1.png"></div>
+						<div class="p3_ad_copy2"><img src="img/p3_ad_copy2.png"></div>
+					</div>
+					<div class="page-r page3-r">
+						<div class="p3_ill"><img src="img/p3_ill.png"></div>
+					</div>
+				</div>
+			</div>
+			<div class="section section4">
+				<div class="main clearfix">
+					<div class="page-l page4-l">
+						<div class="p4_ad_copy1"><img src="img/p4_ad_copy1.png"></div>
+						<div class="p4_ad_copy2"><img src="img/p4_ad_copy2.png"></div>
+					</div>
+					<div class="page-r page4-r">
+						<div class="p4_ill"><img src="img/p4_ill.png"></div>
+					</div>
+				</div>
+			</div>
+			<div class="section section5">
+				<div class="main clearfix">
+					<div class="page5">
+						<div class="p5_ad_copy1"><img src="img/p5_ad_copy1.png"></div>
+						<div class="p5_ad_copy_box">
+							<div class="p5_ad_copy2"><img src="img/p5_ad_copy2.png"></div>
+							<div class="p5_ad_copy3"><img src="img/p5_ad_copy3.png"></div>
+						</div>
+						<div class="p5_ad_copy4"><img src="img/p5_ad_copy4.png"></div>
+						<div class="p5_ad_copy5"><img src="img/p5_ad_copy5.png"></div>
+						<div class="p5_ad_copy6"><img src="img/p5_ad_copy6.png"></div>
+					</div>
+					<div class="footer-logo">
+						<img src="img/p5_ad_logo.png">
+					</div>
+				</div>
+				<div class="footer">
+					<div class="p4ucode"><img src="img/footer_qrcode.png"></div>
+					<div class="footer-in">
+						<div class="footer-copy">Copyright © 2013-2015 Play4U Team. All Rights Reserved. 新ICP备13003571号-2</div>
+						<div class="attention">
+							关注官方微博：<a href="#"><img src="img/footer_ic_sinaweibo.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script>
+    //  var screenWidth=$(window).innerWidth();
+		
+		$(document).ready(function(){
+			$("#swiperBox").fullpage({
+			fixedElement:'#goto_top',
+			anchors: ['page1'],//定义锚链接
+			menu: '#goto_top',//绑定菜单，设定的相关属性与 anchors 的值对应后，菜单可以控制滚动
+			continuousVertical: true,
+			css3: true,
+			navigation:true,
+			navigationPosition:'right',
+			scrollOverflow:true,
+			afterLoad:function(anchorLink,index){
+				if(index!=1){
+					$(".top_btn_download div").fadeIn(200);
+					$(".topBar").css("background","rgba(245,245,245,0.0)");
+					$(".topBarIn .logo_before").css("border-top","0.5rem solid rgba(245,245,245,0.0)")
+					$("#goto_top").fadeIn(200);
+				}else{
+					$(".top_btn_download div").fadeOut(200);
+					$(".topBar").css("background","rgba(245,245,245,0.9)");
+					$(".topBarIn .logo_before").css("border-top","0.5rem solid rgba(245,245,245,0.9)")
+					$("#goto_top").fadeOut(200);
+				}
+			},
+			
+			});	
+		})
+	</script>
+
+</html>
